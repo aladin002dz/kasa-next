@@ -1,4 +1,60 @@
+# Kasa Next.js Project
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Project Overview
+
+This project demonstrates modern web development concepts and techniques using Next.js. Here are the main concepts and technologies used:
+
+### 1. Next.js App Router
+
+- Next.js 15.2.4 with modern App Router architecture
+- File-based routing system
+- Layout system for shared UI elements
+
+### 2. Modern React Features
+
+- React 19 (latest version)
+- TypeScript integration for type safety
+- Server and Client Components
+
+### 3. Styling and UI
+
+- Tailwind CSS for utility-first styling
+- PostCSS for CSS processing
+- Global CSS configuration
+
+### 4. Development Tools
+
+- TypeScript for type checking
+- ESLint for code linting
+- Turbopack for faster development builds
+- Environment variables support
+
+### 5. Project Structure
+
+- `/app` - Main application code with routing
+- `/components` - Reusable React components
+- `/public` - Static assets
+- `/data` - Data files
+- `/src` - Additional source code
+
+### 6. API Integration
+
+- API routes support
+- Environment variable configuration
+
+### 7. Performance Optimization
+
+- Built-in image optimization
+- Font optimization with `next/font`
+- Automatic code splitting
+
+### 8. Development Workflow
+
+- Hot Module Replacement (HMR)
+- Production build optimization
+- Code linting and type checking
 
 ## Getting Started
 
