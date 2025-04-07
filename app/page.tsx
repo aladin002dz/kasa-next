@@ -17,8 +17,20 @@ interface Logement {
   tags: string[];
 }
 
+// Fetch logements data
+/*async function getLogements(): Promise<Logement[]> {
+  const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/data/logements.json');
+  if (!response.ok) {
+    throw new Error('Failed to fetch logements data');
+  }
+  return response.json();
+}*/
 
-export default function Home() {
+export default async function Home() {
+  //const logements = await getLogements();
+  const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/data/logements.json');
+  const logements = await response.json();
+
   return (
     <div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
