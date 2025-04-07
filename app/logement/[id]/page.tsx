@@ -1,4 +1,5 @@
 import logements from "@/data/logements.json";
+import { redirect } from "next/navigation";
 import Rating from "./components/Rating";
 import Slider from "./components/Slider";
 
@@ -26,7 +27,7 @@ export default async function Page({
     const { id } = await params
     const logement: Logement | undefined = logements.find((logement) => logement.id === id)
     if (!logement) {
-        return <div>Logement non trouvé</div>
+        redirect('/not-found')
     }
     return <div className="p-4">
         <Slider pictures={logement.pictures} />

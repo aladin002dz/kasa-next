@@ -1,5 +1,4 @@
 import CardLogement from "@/components/CardLogement";
-
 // Define the Logement type
 interface Logement {
   id: string;
@@ -28,7 +27,9 @@ interface Logement {
 
 export default async function Home() {
   //const logements = await getLogements();
-  const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/data/logements.json');
+  /* const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/data/logements.json');
+  const logements = await response.json(); */
+  const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/api/logements');
   const logements = await response.json();
 
   return (
